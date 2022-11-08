@@ -1,66 +1,176 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Who we are - Enfo News</title>
+    <title>Enfo News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:400,700"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="./assets/css/aboutus.css" type="text/css">
+</head>
+
+<body>
     <section role="main" id="wrapper">
-      <!--Header-->
-      <header id="header" class="header">
-        <div id="branding">
-          <img src="assets/google-logo-animation.gif">
+        <!--Header-->
+        <header id="header" class="header">
+            <div id="branding">
+                <img src="assets/google-logo-animation.gif">
+            </div>
+            <h1>News</h1>
+            <!--Menu-->
+            <nav id="menu" class="menu">
+                <ul>
+                    <li>
+                        <a href="/Offerings">What we do</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">Who we are</a>
+                    </li>
+                    <li>
+                        <a href="/Customers">Customers</a>
+                    </li>
+                    <li>
+                        <a href="/Careers">Career</a>
+                    </li>
+                    <li>
+                        <a href="/Investor-relations">IR</a>
+                    </li>
+                    <li>
+                        <a href="/Latest" class="current">Latest</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html">Contact</a>
+                    </li>
+                    <li class="search">
+                        <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search titles"
+                            title="Type in title search term">
+                    </li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="menuFunction()">&#9776;</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Meet the Team -->
+        <br>
+        <hr>
+
+        <div class="container">
+            <div class="mtt-title">
+                <h1>Meet the team</h1>
+            </div>
+            <div class="flex-container">
+                <div class="item1">
+                    <img src="assets/person1.PNG">
+                    <p class="person-name">Melissa Humble</p>
+                    <p>CEO</p>
+                </div>
+                <div class="item2">
+                    <img src="assets/person2.PNG">
+                    <p class="person-name">Diego Kahn</p>
+                    <p>Creative Director</p>
+                </div>
+                <div class="item3">
+                    <img src="assets/person1.PNG">
+                    <p class="person-name">Melissa Humble</p>
+                    <p>CEO</p>
+                </div>
+                <div class="item4">
+                    <img src="assets/person2.PNG">
+                    <p class="person-name">Diego Kahn</p>
+                    <p>Creative Director</p>
+                </div>
+                <div class="item5">
+                    <img src="assets/person1.PNG">
+                    <p class="person-name">Melissa Humble</p>
+                    <p>CEO</p>
+                </div>
+                <div class="item6">
+                    <img src="assets/person2.PNG">
+                    <p class="person-name">Diego Kahn</p>
+                    <p>Creative Director</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="item1">
+                    <img src="assets/person1.PNG">
+                    <p class="person-name">Melissa Humble</p>
+                    <p>CEO</p>
+                </div>
+                <div class="item2">
+                    <img src="assets/person2.PNG">
+                    <p class="person-name">Diego Kahn</p>
+                    <p>Creative Director</p>
+                </div>
+                <div class="item3">
+                    <img src="assets/person1.PNG">
+                    <p class="person-name">Melissa Humble</p>
+                    <p>CEO</p>
+                </div>
+                <div class="item4">
+                    <img src="assets/person2.PNG">
+                    <p class="person-name">Diego Kahn</p>
+                    <p>Creative Director</p>
+                </div>
+                <div class="item5">
+                    <img src="assets/person1.PNG">
+                    <p class="person-name">Melissa Humble</p>
+                    <p>CEO</p>
+                </div>
+                <div class="item6">
+                    <img src="assets/person2.PNG">
+                    <p class="person-name">Diego Kahn</p>
+                    <p>Creative Director</p>
+                </div>
+            </div>
         </div>
-        <h1>News</h1>
-        <!--Menu-->
-        <nav id="menu" class="menu">
-          <ul>
-            <li>
-              <a href="/Offerings">What we do</a>
-            </li>
-            <li>
-              <a href="aboutus.html">Who we are</a>
-            </li>
-            <li>
-              <a href="/Customers">Customers</a>
-            </li>
-            <li>
-              <a href="/Careers">Career</a>
-            </li>
-            <li>
-              <a href="/Investor-relations">IR</a>
-            </li>
-            <li>
-              <a href="/Latest" class="current">Latest</a>
-            </li>
-            <li>
-              <a href="contact-us.html">Contact</a>
-            </li>
-            <li class="search">
-              <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search titles" title="Type in title search term">
-            </li>
-            <li class="icon">
-              <a href="javascript:void(0);" onclick="menuFunction()">&#9776;</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
 
-    
+        <hr>
 
-      <footer>
-        <!--Wather widget-->
-        <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
-        <!--JS Scripts-->
-        <script type="text/javascript" src="./assets/js/menu.js"></script> <!--Mobile menu JS-->
-        <script type="text/javascript" src="./assets/js/request.js"></script> <!--JSON API request JS-->
+    <!-- Footer -->
 
-      </footer>
+        <footer>
+
+            <div class="parent">
+                <div class="div1">
+                    <p class="bold">About us</p>
+                    <p>What we do</p>
+                    <p>Who we are</p>
+                </div>
+                <div class="div2">
+                    <p class="bold">About You</p>
+                    <p>Customers</p>
+                    <p>Latest</p>
+                </div>
+                <div class="div3">
+                    <p class="bold">Address</p>
+                    <p>Google Street 2,</p>
+                    <p>526 42 Googleville</p>
+                </div>
+                <div class="div4">
+                    <p class="bold">
+                        Copyright 2022 Google News
+                    </p>
+                </div>
+            </div>
+
+
+            <!--Wather widget-->
+            <script> !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');</script>
+            <!--JS Scripts-->
+            <script type="text/javascript" src="./assets/js/menu.js"></script>
+            <!--Mobile menu JS-->
+            <script type="text/javascript" src="./assets/js/request.js"></script>
+            <!--JSON API request JS-->
+
+        </footer>
     </section>
-  </body>
+</body>
+
 </html>
