@@ -76,25 +76,6 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1150px) {
-  .flex-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .parent {
-    display: inline-block;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .mtt-title {
-    text-align: center;
-    padding: 0 0;
-  }
-}
 
 footer {
   padding-top: 22px;
@@ -105,6 +86,8 @@ footer {
   justify-content: center;
 }
 
+/* Responsive Mett the team */
+
 @media only screen and (max-width: 1440px) {
   .grid-container {
     grid-template-columns: auto auto auto auto auto;
@@ -112,6 +95,48 @@ footer {
 
   .first {
     grid-column: 1 / 6;
+  }
+}
+
+
+@media only screen and (max-width: 1220px) {
+  .grid-container {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .first {
+    grid-column: 1 / 5;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .first {
+    grid-column: 1 /4;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .first {
+    grid-column: 1 / 3;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .first {
+    grid-column: 1 / 2;
+    text-align: center;
   }
 }
 
@@ -150,8 +175,6 @@ footer {
 .our-story-wrapper {
   padding: 4rem 0;
 }
-
-
 
 .margin-bottom-xsmall {
   margin-bottom: 1rem;
