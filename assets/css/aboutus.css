@@ -1,5 +1,5 @@
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -39,6 +39,7 @@
 
 .margin-bottom-small {
   margin-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 /* Meet the Team */
@@ -59,11 +60,11 @@
   grid-template-columns: auto auto auto auto auto auto;
   padding: 10px;
   column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 10px;
 }
 
 .grid-container .grid-item img {
-  width: 100%;
+  width: 100% ;
 }
 
 .grid-item {
@@ -151,6 +152,10 @@ footer {
   text-align: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* Footer Responsive */
 
 @media only screen and (max-width: 800px) {
@@ -168,5 +173,8 @@ footer {
 @media only screen and (max-width: 500px) {
   .grid-container2 {
     grid-template-columns: auto;
+  }
+  h2 {
+    text-align: center;
   }
 }
