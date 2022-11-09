@@ -74,9 +74,8 @@ h2 {
 /*------LINKS-----*/
 
 a {
-	color:$link;
+	color:black;
 	text-decoration:none;
-  @include transition(.5s); /*Taken fomr mixin.scss*/
   cursor:pointer;
 
   &:hover,
@@ -85,4 +84,13 @@ a {
   	color:$link-hover;
   	text-decoration:none;
   }
+}
+
+// * Font styles (Klasser du kan styla dina html element med)
+
+
+.display-6 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
