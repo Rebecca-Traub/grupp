@@ -78,3 +78,52 @@
         padding-top: 22px;
         padding-bottom: 25px;
       }
+
+
+      /* 
+      * About section
+      */
+
+      #about {
+        border-bottom: 1px #CCCCCC solid;
+      }
+
+      .about-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        flex-wrap: wrap;
+        column-gap: 2.5rem;
+        row-gap: 2.5rem;
+      }
+
+      .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        justify-self: center;
+
+      }
+
+      /*
+      * Our story section
+       */
+
+      #our-story {
+  
+      }
+
+      .our-story-wrapper {
+        padding: 4rem 0;
+      }
+
+
+
+      .margin-bottom-xsmall {
+        margin-bottom: 1rem;
+      }
+
+      .margin-bottom-small {
+        margin-bottom: 1.5rem;
+      }
