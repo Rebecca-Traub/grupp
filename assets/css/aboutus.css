@@ -13,6 +13,10 @@
   line-height: 2rem;
  }
 
+ .bold {
+  font-weight: bold;
+ }
+
 /* About Section */
 
 #about {
@@ -67,9 +71,9 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  padding: 10px;
   column-gap: 20px;
   row-gap: 20px;
+  padding: 4rem 0;
 }
 
 .grid-container .grid-item img {
@@ -150,14 +154,14 @@ footer {
 
 .grid-container2 {
   display: grid;
+  justify-content: space-between;
   grid-template-columns: auto auto auto auto;
-  padding: 10px;
   column-gap: 20px;
   row-gap: 20px;
 }
 
 .grid-item-f {
-  text-align: center;
+  text-align: left;
 }
 
 /* Footer Responsive */
