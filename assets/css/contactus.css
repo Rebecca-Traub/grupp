@@ -1,0 +1,11 @@
+.container {
+    width: 80%;
+    margin: auto
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 15px;
+}

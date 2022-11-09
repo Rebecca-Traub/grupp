@@ -67,3 +67,22 @@ function articlesFunction(arr) { //Create articlesFunction
  //Fill the #content tag with the content within the variables 'noResults' & 'out' & weatherWidget
   document.getElementById("content").innerHTML = noResults + out;
 }
+
+      //Header
+      function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"
+
+
+declare global {
+  interface Window {
+    initMap: () => void;
+  }
+}
+window.initMap = initMap;
+export {};
