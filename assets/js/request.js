@@ -67,3 +67,13 @@ function articlesFunction(arr) { //Create articlesFunction
  //Fill the #content tag with the content within the variables 'noResults' & 'out' & weatherWidget
   document.getElementById("content").innerHTML = noResults + out;
 }
+
+
+
+declare global {
+  interface Window {
+    initMap: () => void;
+  }
+}
+window.initMap = initMap;
+export {};
