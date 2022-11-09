@@ -77,7 +77,7 @@ Version: 1.0
 /*Mixin SASS file*/
 /*! TYPOGRAPHY  */
 /* --- Convert percent font sizes to em ---*/
-html, .paragraph, #header nav#menu ul li.search input#searchInput, li, p {
+html, .paragraph, #header nav#menu ul li.search input#searchInput, li {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   margin-top: 10px;
@@ -87,7 +87,7 @@ html, .paragraph, #header nav#menu ul li.search input#searchInput, li, p {
   line-height: 1.25rem;
   color: black;
 }
-html strong, html b, .paragraph strong, #header nav#menu ul li.search input#searchInput strong, li strong, .paragraph b, #header nav#menu ul li.search input#searchInput b, li b, p strong, p b {
+html strong, html b, .paragraph strong, #header nav#menu ul li.search input#searchInput strong, li strong, .paragraph b, #header nav#menu ul li.search input#searchInput b, li b {
   font-weight: bold;
 }
 
@@ -130,19 +130,19 @@ h2 {
 
 /*------LINKS-----*/
 a {
-  color: #2a5db0;
+  color: black;
   text-decoration: none;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  /*Taken fomr mixin.scss*/
   cursor: pointer;
 }
 a:hover, a:active, a:visited {
   color: #16315e;
   text-decoration: none;
+}
+
+.display-6 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 /*Fonts SASS file*/
@@ -489,7 +489,6 @@ body {
   overflow-x: hidden;
   display: block;
   clear: both;
-  padding: 1%;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
   font-size: 13pt;
