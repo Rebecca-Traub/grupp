@@ -1,80 +1,172 @@
 .container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
+}
+
+/* About Section */
+
+#about {
+  border-bottom: 1px #CCCCCC solid;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  flex-wrap: wrap;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  justify-self: center;
+
+}
+
+/* Our Story section */
+
+.our-story-wrapper {
+  padding: 4rem 0;
+}
+
+.margin-bottom-xsmall {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+/* Meet the Team */
+
+.mtt-title {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.person-name {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.grid-container .grid-item img {
+  width: 100%;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.first {
+  grid-column: 1 / 7;
+}
+
+.j-c {
+  justify-content: center;
+}
+
+/* Responsive Mett the team */
+
+@media only screen and (max-width: 1440px) {
+  .grid-container {
+    grid-template-columns: auto auto auto auto auto;
   }
-  
-  .mtt-title {
-      text-align: left ;
-      padding-top: 50px;
-      padding-bottom: 20px;
-      padding-left: 185px;
+
+  .first {
+    grid-column: 1 / 6;
   }
-  
-  .person-name {
-      font-weight: bolder;
-      font-size: 18px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .grid-container {
+    grid-template-columns: auto auto auto auto;
   }
-  
-  .flex-container {
-      display:flex;
-      justify-content: center; 
-      height: 100%;
-      padding: 15px;
-      /* margin-left: 300px; */
-    }
-  
-    .flex-container > div{
-      border-radius: 5px;
-      padding: 8px;
-    }
-  
-  
-    .item1 { 
-      /* flex:0 1 auto; */
-      order:0;
-      align-self:auto;
-    }
-  
-  
-    .parent {
-      display: grid;
-      
-      width: 75%;
-      margin: auto 325px;
-      grid-template-columns: repeat(5);
-      grid-template-rows: repeat(5);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      }
-      
-      .div1 { grid-area: 1 / 1 / 2 / 2; }
-      .div2 { grid-area: 1 / 2 / 2 / 3; }
-      .div3 { grid-area: 1 / 3 / 2 / 4; }
-      .div4 { grid-area: 1 / 4 / 2 / 5; }
-  
-      .bold {
-          font-weight: bold;
-      }
-  
-      @media only screen and (max-width: 1150px) {
-        .flex-container {
-         flex-direction: column;
-         text-align: center;
-        }
-        .parent {
-          display: inline-block;
-          text-align: center;
-          margin: 0px;
-          padding: 0px;
-          width: 100%;
-        }
-        .mtt-title {
-          text-align: center;
-          padding: 0 0;
-        }
-      }
-  
-      footer {
-        padding-top: 22px;
-        padding-bottom: 25px;
-      }
+
+  .first {
+    grid-column: 1 / 5;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .first {
+    grid-column: 1 /4;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .first {
+    grid-column: 1 / 3;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .first {
+    grid-column: 1 / 2;
+    text-align: center;
+  }
+}
+
+/* Footer Styling */
+footer {
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.grid-item-f {
+  text-align: center;
+}
+
+/* Footer Responsive */
+
+@media only screen and (max-width: 800px) {
+  .grid-container2 {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .grid-container2 {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid-container2 {
+    grid-template-columns: auto;
+  }
+}
