@@ -15,18 +15,15 @@ Version: 1.0
 }
 @keyframes moveUp {
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
 }
 /*Moving up fade in animation*/
 .moveUp {
-  opacity: 0;
-  -webkit-transform: translateY(200px); /*Taken from mixin.scss*/
+  opacity: 0; /*Taken from mixin.scss*/
   transform: translateY(200px); /*Taken from mixin.scss*/
-  -moz-transform: translateY(200px); /*Taken from mixin.scss*/
-  -moz-animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
+  -moz-transform: translateY(200px); /*Taken from mixin.scss*/ /*Taken from mixin.scss*/
   -webkit-animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
   animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
 }
@@ -44,10 +41,6 @@ Version: 1.0
   background: #2a5db0;
   font-weight: bold;
   color: white !important;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   /*Taken from mixin.scss*/
 }
@@ -62,8 +55,6 @@ Version: 1.0
   font-size: 125%;
   line-height: 2;
   color: #fff;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
   right: -20px;
   top: 0;
@@ -129,20 +120,11 @@ h2 {
 }
 
 /*------LINKS-----*/
-a {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover, a:active, a:visited {
-  color: #16315e;
-  text-decoration: none;
-}
-
 .display-6 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+  font-family: "Playfair Display", serif;
 }
 
 /*Fonts SASS file*/
@@ -209,10 +191,6 @@ a:hover, a:active, a:visited {
   #header nav#menu {
     min-width: auto;
     max-height: 0px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
     transition: 1s;
     /*Taken fomr mixin.scss*/
     /*Open menu*/
@@ -223,10 +201,6 @@ a:hover, a:active, a:visited {
   #header nav#menu.responsive {
     width: 100%;
     max-height: 1000px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
     transition: 1s;
     /*Taken fomr mixin.scss*/
   }
@@ -271,10 +245,6 @@ a:hover, a:active, a:visited {
 }
 #header nav#menu ul li.search input#searchInput:focus {
   box-shadow: 0 0 5px #2a5db0;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 @media screen and (max-width: 1190px) {
@@ -387,7 +357,8 @@ article#article img {
   display: block;
   overflow: hidden;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 200px;
 }
 article#article .info {
@@ -425,10 +396,6 @@ article#article.show {
   padding-top: 0;
   height: auto;
   opacity: 1;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -ms-transition: opacity 1s;
-  -o-transition: opacity 1s;
   transition: opacity 1s;
   /*Taken fomr mixin.scss*/
   /*Close .info*/
