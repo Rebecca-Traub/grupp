@@ -207,3 +207,9 @@ footer {
     text-align: center;
   }
 }
+
+#get-in-touch {
+  border-bottom: 1px #CCCCCC solid;
+
+  padding: 4rem 0;
+}

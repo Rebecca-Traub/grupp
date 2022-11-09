@@ -9,3 +9,10 @@
     height: 100%;
     padding: 15px;
 }
+
+p {
+    font-family: "Open sans";
+    font-size: 14px;
+    line-height: 25px;
+  
+  }

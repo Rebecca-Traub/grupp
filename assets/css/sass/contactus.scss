@@ -1,21 +1,6 @@
-#get-in-touch {
-    border-bottom: 1px #CCCCCC solid;
-  }
-  
-  .git-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    flex-wrap: wrap;
-    column-gap: 2.5rem;
-    row-gap: 2.5rem;
-  }
-  
-  .git-content {
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    justify-self: center;
-  
-  }
+p {
+  font-family: "Open sans";
+  font-size: 14px;
+  line-height: 25px;
+
+}
