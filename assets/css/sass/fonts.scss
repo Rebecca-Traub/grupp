@@ -65,8 +65,8 @@ h1 {
 
 h2 {
   font: {
-    family:$primary-font;
-   	weight: normal;
+    font-family: $primary-font;
+   	font-weight: 600;
   }
 	@include size(20, 25);
 }
