@@ -120,8 +120,8 @@ h1 {
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+  font-font-family: "Playfair Display", serif;
+  font-font-weight: 600;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 25px;
@@ -129,17 +129,27 @@ h2 {
 }
 
 /*------LINKS-----*/
-.display-6 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 500;
-  font-family: "Playfair Display", serif;
+a {
+  color: #2a5db0;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  /*Taken fomr mixin.scss*/
+  cursor: pointer;
+}
+a:hover, a:active, a:visited {
+  color: #16315e;
+  text-decoration: none;
 }
 
 .display-6 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+  font-family: "Playfair Display", serif;
 }
 
 /*Fonts SASS file*/
@@ -243,6 +253,7 @@ h2 {
   display: inline-block;
   vertical-align: middle;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: bold;
   margin: 0 1%;
   /*Breakpoint for when menu can't fit the screen anymore*/
@@ -481,6 +492,26 @@ article#article.show .info .date-author {
 }
 
 /*Articles SASS file*/
+/* 
+* Global spacing
+ */
+.margin-bottom-xxsmall {
+  margin-bottom: 0.25rem;
+}
+
+.margin-bottom-xsmall {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4.5rem;
+}
+
+/*Spacing SASS file*/
 body {
   width: 100%;
   overflow-x: hidden;
@@ -525,24 +556,3 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
-/* 
-* Global spacing
- */
- 
- .margin-bottom-xxsmall {
-   margin-bottom: 0.25rem;
- }
- .margin-bottom-xsmall {
-  margin-bottom: 1rem;
-}
-
-.margin-bottom-small {
-  margin-bottom: 1.5rem;
-}
- .margin-bottom-medium {
-  margin-bottom: 4.5rem;
-}
-
-
