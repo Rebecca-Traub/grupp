@@ -1,0 +1,60 @@
+/*! TYPOGRAPHY  */
+/* --- Convert percent font sizes to em ---*/
+html, .paragraph, li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  color: black;
+}
+html strong, html b, .paragraph strong, li strong, .paragraph b, li b {
+  font-weight: bold;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+li {
+  list-style-type: none;
+  list-style-image: none;
+  margin-top: 5px;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+}
+
+h2 {
+  font-font-family: "Playfair Display", serif;
+  font-font-weight: 600;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+}
+
+/*------LINKS-----*/
+.display-6 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}/*# sourceMappingURL=fonts.css.map */

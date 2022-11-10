@@ -1,66 +1,226 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Enfo News</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-  </head>
-  <body>
-    <section role="main" id="wrapper">
-      <!--Header-->
-      <header id="header" class="header">
-        <div id="branding">
-          <img src="assets/google-logo-animation.gif">
+
+<head>
+  <meta charset="utf-8">
+  <title>Enfo News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="./assets/css/aboutus.css" type="text/css">
+  <link rel="stylesheet" href="./assets/css/contactus.css" type="text/css">
+ 
+
+</head>
+
+<body>
+  <section role="main" id="wrapper">
+    <!--Header-->
+    <header id="header" class="header">
+      <div id="branding">
+        <img src="assets/google-logo-animation.gif">
+      </div>
+      <h1>News</h1>
+      <!--Menu-->
+      <nav id="menu" class="menu">
+        <ul>
+          <li>
+            <a href="/Offerings">What we do</a>
+          </li>
+          <li>
+            <a href="aboutus.html" class="current">Who we are</a>
+          </li>
+          <li>
+            <a href="/Customers">Customers</a>
+          </li>
+          <li>
+            <a href="/Careers">Career</a>
+          </li>
+          <li>
+            <a href="/Investor-relations">IR</a>
+          </li>
+          <li>
+            <a href="/Latest">Latest</a>
+          </li>
+          <li>
+            <a href="contact-us.html">Contact</a>
+          </li>
+          <li class="search">
+            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search titles"
+              title="Type in title search term">
+          </li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="menuFunction()">&#9776;</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <!--Google -->
+    <section id="map">
+      <div>
+        <img src="assets/building.png" alt="" class="header-img">
+      </div>
+      <div class="container">
+        <div class="map-wrapper">
+
+
+
+          <h2 class="margin-bottom-small">Get in touch</h2>
+
+          <div class="grid-container2 j-c2 margin-bottom-medium">
+            <div class="grid-item-f center">
+              <p class="bold margin-bottom-xsmall">General inquiries Hej Hej</p>
+              <p>info@googlenews.com</p>
+              <p>+846 795 85 96</p>
+            </div>
+            <div class="grid-item-f center">
+              <p class="bold">New business</p>
+              <p>Melissa Humble</p>
+              <p>melissa.humble@googlenews.com</p>
+            </div>
+            <div class="grid-item-f center">
+              <p class="bold">Careers</p>
+              <p>job@googlenews.com</p>
+              <p>internship@googlenews.com</p>
+            </div>
+            <div class="grid-item-f center">
+              <br><br><br>
+              <p class="bold icon-wrapper">
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="margin-bottom-medium" style="width: 100%"><iframe width="100%" height="280" frameborder="0"
+              scrolling="no" marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=280&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe></div>
         </div>
-        <h1>News</h1>
-        <!--Menu-->
-        <nav id="menu" class="menu">
-          <ul>
-            <li>
-              <a href="/Offerings">What we do</a>
-            </li>
-            <li>
-              <a href="/About-us" class="current">Who we are</a>
-            </li>
-            <li>
-              <a href="/Customers">Customers</a>
-            </li>
-            <li>
-              <a href="/Careers">Career</a>
-            </li>
-            <li>
-              <a href="/Investor-relations">IR</a>
-            </li>
-            <li>
-              <a href="/Latest">Latest</a>
-            </li>
-            <li>
-              <a href="/Contact">Contact</a>
-            </li>
-            <li class="search">
-              <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search titles" title="Type in title search term">
-            </li>
-            <li class="icon">
-              <a href="javascript:void(0);" onclick="menuFunction()">&#9776;</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      </div>
+      </div>
 
-      <section id="content">
-      </section>
 
-      <!--Google -->
-      <section id="content">
-       <div class="mapouter"><div class="gmap_canvas"><iframe width="1181" height="287" id="gmap_canvas" src="https://maps.google.com/maps?q=gothenburg&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org/%22%3E123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:287px;width:1181px;}</style><a href="https://www.embedgooglemap.net/%22%3E</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:287px;width:1181px;}</style></div></div>
 
-      <footer>
+    </section>
 
-      </footer>
+    <!--Meet the team -->
 
-  </body>
+    <hr>
+    <section>
+      <div class="container">
+
+        <div class="grid-container j-c">
+
+          <div class="grid-item first margin-bottom-small">
+            <h2>Meet the team</h2>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person1.PNG">
+            <p class="person-name">Melissa Humble</p>
+            <p>CEO</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person2.PNG">
+            <p class="person-name">Diego Kahn</p>
+            <p>Creative Director</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person1.PNG">
+            <p class="person-name">Melissa Humble</p>
+            <p>CEO</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person2.PNG">
+            <p class="person-name">Diego Kahn</p>
+            <p>Creative Director</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person1.PNG">
+            <p class="person-name">Melissa Humble</p>
+            <p>CEO</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person2.PNG">
+            <p class="person-name">Diego Kahn</p>
+            <p>Creative Director</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person1.PNG">
+            <p class="person-name">Melissa Humble</p>
+            <p>CEO</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person2.PNG">
+            <p class="person-name">Diego Kahn</p>
+            <p>Creative Director</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person1.PNG">
+            <p class="person-name">Melissa Humble</p>
+            <p>CEO</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person2.PNG">
+            <p class="person-name">Diego Kahn</p>
+            <p>Creative Director</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person1.PNG">
+            <p class="person-name">Melissa Humble</p>
+            <p>CEO</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/person2.PNG">
+            <p class="person-name">Diego Kahn</p>
+            <p>Creative Director</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- * Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="grid-container2 j-c2">
+          <div class="grid-item-f center">
+            <p class="bold">About Us</p>
+            <p>What we do</p>
+            <p>Who we are</p>
+          </div>
+          <div class="grid-item-f center">
+            <p class="bold">About you</p>
+            <p>Customers</p>
+            <p>Latest</p>
+          </div>
+          <div class="grid-item-f center">
+            <p class="bold">Address</p>
+            <p>Google Street 2,</p>
+            <p>526 42 Googleville</p>
+          </div>
+          <div class="grid-item-f center">
+            <br><br><br>
+            <p class="bold">Copyright 2022 Google News</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/ddd8e99249.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,11 +1,15 @@
-.container {
-    width: 80%;
-    margin: auto
-}
-
-.flex-container {
+.map-wrapper {
+    padding: 4rem 0;
+  }
+  
+  .fa-brands {
+    font-size: 2rem;
+  }
+  
+  .icon-wrapper {
     display: flex;
+    column-gap: 1rem;
     justify-content: center;
-    height: 100%;
-    padding: 15px;
-}
+  }
+
+
