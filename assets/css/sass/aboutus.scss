@@ -99,7 +99,7 @@ p {
 }
 
 .grid-container .grid-item img {
-  width: 100%;
+  width: 100% ;
 }
 
 .grid-item {
@@ -147,6 +147,7 @@ p {
   .first {
     grid-column: 1 / 4;
   }
+  
 }
 
 @media only screen and (max-width: 700px) {
@@ -169,6 +170,14 @@ p {
   .grid-container {
     grid-template-columns: auto;
     justify-content: center;
+  }
+
+  .about-content {
+    gap: .25rem;
+  }
+
+  .display-6 {
+    font-size: 1.25rem;
   }
 
   .first {

@@ -73,6 +73,20 @@ h2 {
 
 /*------LINKS-----*/
 
+a {
+	color:$link;
+	text-decoration:none;
+  @include transition(.5s); /*Taken fomr mixin.scss*/
+  cursor:pointer;
+
+  &:hover,
+  &:active,
+  &:visited {
+  	color:$link-hover;
+  	text-decoration:none;
+  }
+}
+
 
 // * Font styles (Klasser du kan styla dina html element med)
 
