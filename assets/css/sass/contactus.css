@@ -1,0 +1,14 @@
+.map-wrapper {
+  padding: 4rem 0;
+}
+
+.fa-brands {
+  font-size: 2rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  justify-content: center;
+}/*# sourceMappingURL=contactus.css.map */

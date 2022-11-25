@@ -11,6 +11,8 @@ Version: 1.0
 @import "spacing.scss"; /*Spacing SASS file*/
 @import "contactus.scss"; /*Spacing SASS file*/
 @import "aboutus.scss"; /*Spacing SASS file*/
+@import "colors.scss"; /*Spacing SASS file*/
+
 
 body {
   width: 100%;
@@ -18,7 +20,7 @@ body {
   display: block;
   clear: both;
   box-sizing: border-box;
-	font-family:$primary-font;
+	font-family: $primary-font;
 	font-size:13pt;
 	color:black;
 }

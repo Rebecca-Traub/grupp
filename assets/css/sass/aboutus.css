@@ -1,9 +1,4 @@
-
-@import "colors.scss";  // Colors SASS file /
-
-// Varible NEW UPDATE 25 Nov 2022
-$primaryFontA: "Playfair Display", serif;
-
+/*COLORS*/
 .container {
   width: 90%;
   margin: auto;
@@ -17,19 +12,16 @@ $primaryFontA: "Playfair Display", serif;
 /* 
 * Font styles
  */
-
- .display-6 {
+.display-6 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
-  font-family: $primaryFontA;
- }
+  font-family: "Playfair Display", serif;
+}
 
-
-
- .bold {
+.bold {
   font-weight: bold;
- }
+}
 
 p {
   font-family: open sans;
@@ -37,14 +29,13 @@ p {
   font-size: 14px;
 }
 
- .header-img {
+.header-img {
   width: 100%;
- }
+}
 
 /* About Section */
-
 #about {
-  border-bottom: 1px $light-grey solid;
+  border-bottom: 1px #CCC solid;
 }
 
 .header-img {
@@ -59,29 +50,24 @@ p {
   padding-top: 4rem;
   padding-bottom: 4rem;
   flex-wrap: wrap;
-  column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
   row-gap: 2.5rem;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: .75rem;
+  gap: 0.75rem;
   justify-self: center;
-
 }
 
 /* Our Story section */
-
-
-
 .our-story-wrapper {
   padding: 4rem 0;
 }
 
-
 /* Meet the Team */
-
 .mtt-title {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -91,20 +77,21 @@ p {
 .person-name {
   font-weight: bolder;
   font-size: 18px;
-  margin-bottom: .75rem;
-  margin-top: .75rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   row-gap: 20px;
   padding: 4rem 0;
 }
 
 .grid-container .grid-item img {
-  width: 100% ;
+  width: 100%;
 }
 
 .grid-item {
@@ -113,7 +100,7 @@ p {
 }
 
 .first {
-  grid-column: 1 / 7;
+  grid-column: 1/7;
 }
 
 .j-c {
@@ -121,76 +108,59 @@ p {
 }
 
 /* Responsive Mett the team */
-
 @media only screen and (max-width: 1440px) {
   .grid-container {
     grid-template-columns: auto auto auto auto auto;
   }
-
   .first {
-    grid-column: 1 / 6;
+    grid-column: 1/6;
   }
-  
 }
-
 @media only screen and (max-width: 1220px) {
   .grid-container {
     grid-template-columns: auto auto auto auto;
   }
-
   .first {
-    grid-column: 1 / 5;
+    grid-column: 1/5;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .grid-container {
     grid-template-columns: auto auto auto;
     justify-content: center;
   }
-
   .first {
-    grid-column: 1 / 4;
+    grid-column: 1/4;
   }
-  
 }
-
 @media only screen and (max-width: 700px) {
   .grid-container {
     grid-template-columns: auto auto;
     justify-content: center;
   }
-
   .margin-bottom-small {
     text-align: center;
   }
-
   .first {
-    grid-column: 1 / 3;
+    grid-column: 1/3;
   }
 }
-
-@media only screen and (max-width:500px) {
-
+@media only screen and (max-width: 500px) {
   .grid-container {
     grid-template-columns: auto;
     justify-content: center;
   }
-
   .about-content {
-    gap: .25rem;
+    gap: 0.25rem;
   }
-
   .display-6 {
     font-size: 1.25rem;
   }
-
   .first {
-    grid-column: 1 / 2;
+    grid-column: 1/2;
     text-align: center;
   }
 }
-
 /* Footer Styling */
 footer {
   padding-top: 22px;
@@ -201,7 +171,8 @@ footer {
   display: grid;
   justify-content: space-between;
   grid-template-columns: auto auto auto auto;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   row-gap: 20px;
 }
 
@@ -211,17 +182,15 @@ footer {
 }
 
 .footer-bottom {
- align-content: end;
+  align-content: end;
 }
 
 /* Footer Responsive */
-
 @media only screen and (max-width: 800px) {
   .grid-container2 {
     grid-template-columns: auto auto auto;
   }
 }
-
 @media only screen and (max-width: 700px) {
   .grid-container2 {
     grid-template-columns: auto auto;
@@ -231,7 +200,6 @@ footer {
     text-align: center;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .grid-container2 {
     grid-template-columns: auto;
@@ -240,5 +208,4 @@ footer {
   .center {
     text-align: center;
   }
-}
-
+}/*# sourceMappingURL=aboutus.css.map */
